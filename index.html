@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <title>MontajPoint | Mersin Elektrik, Su Tesisatı ve Mobilya Montaj</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="MontajPoint - Mersin'de elektrik, su tesisatı ve mobilya montaj hizmetleri. Uygun fiyat, temiz işçilik, hızlı destek." />
+  <meta name="keywords" content="Mersin montaj, Mersin elektrikçi, Mersin su tesisatı, gardrop kurulumu, batarya değişimi, avize montajı, priz değişimi" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: #222;
+      line-height: 1.5;
+    }
+
+    header {
+      background: #111;
+      color: white;
+      padding: 20px 15px;
+      text-align: center;
+    }
+
+    .logo {
+      width: 90px;
+      max-width: 100%;
+      border-radius: 14px;
+      display: block;
+      margin: 0 auto 10px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 30px;
+    }
+
+    header p {
+      margin: 8px 0 0;
+      color: #ccc;
+      font-size: 15px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #1f2937, #111827);
+      color: white;
+      text-align: center;
+      padding: 35px 15px;
+    }
+
+    .hero h2 {
+      margin-top: 0;
+      font-size: 28px;
+    }
+
+    .hero p {
+      max-width: 800px;
+      margin: 10px auto 20px;
+      color: #e5e7eb;
+    }
+
+    .hero-image {
+      max-width: 100%;
+      border-radius: 18px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+      margin-top: 20px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 18px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 20px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 15px;
+      transition: 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      opacity: 0.95;
+    }
+
+    .btn-whatsapp {
+      background: #25d366;
+      color: #111;
+    }
+
+    .btn-call {
+      background: #f59e0b;
+      color: #111;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 30px 15px;
+    }
+
+    .section-title {
+      margin-top: 0;
+      font-size: 26px;
+      margin-bottom: 8px;
+    }
+
+    .section-text {
+      margin-top: 0;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 18px;
+      box-shadow: 0 5px 14px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 12px;
+      font-size: 19px;
+    }
+
+    .card ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .card li {
+      margin-bottom: 8px;
+    }
+
+    .price-box {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 5px 14px rgba(0,0,0,0.08);
+      overflow: hidden;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th {
+      background: #111;
+      color: white;
+      text-align: left;
+      padding: 14px 12px;
+      font-size: 15px;
+    }
+
+    td {
+      padding: 13px 12px;
+      border-bottom: 1px solid #eee;
+      font-size: 15px;
+      vertical-align: top;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    .note {
+      background: #fff7ed;
+      border: 1px solid #fed7aa;
+      color: #9a3412;
+      padding: 14px;
+      border-radius: 12px;
+      margin-top: 14px;
+      font-size: 14px;
+    }
+
+    .testimonials {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+    }
+
+    .testimonial {
+      background: white;
+      border-radius: 16px;
+      padding: 18px;
+      box-shadow: 0 5px 14px rgba(0,0,0,0.08);
+    }
+
+    .testimonial p {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .testimonial strong {
+      color: #555;
+      font-size: 14px;
+    }
+
+    .map-box {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 5px 14px rgba(0,0,0,0.08);
+      overflow: hidden;
+    }
+
+    .map-box iframe {
+      display: block;
+      width: 100%;
+      height: 320px;
+      border: 0;
+    }
+
+    .map-text {
+      padding: 14px;
+      font-size: 14px;
+      color: #444;
+    }
+
+    .contact {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 35px 15px;
+      margin-top: 20px;
+    }
+
+    .contact h2 {
+      margin-top: 0;
+      font-size: 28px;
+    }
+
+    .contact p {
+      color: #ddd;
+      margin-bottom: 20px;
+    }
+
+    .socials {
+      margin-top: 18px;
+    }
+
+    .socials a {
+      color: white;
+      text-decoration: none;
+      margin: 0 8px;
+      font-size: 14px;
+    }
+
+    footer {
+      background: #000;
+      color: #aaa;
+      text-align: center;
+      padding: 14px;
+      font-size: 13px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 26px;
+      }
+
+      .hero h2 {
+        font-size: 24px;
+      }
+
+      th, td {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo-montajpoint.png" alt="MontajPoint Logo" class="logo">
+    <h1>MontajPoint</h1>
+    <p>Küçük İş • Az Fiyat • Sağlam İşçilik</p>
+  </header>
+
+  <section class="hero">
+    <h2>Mersin Elektrik, Su Tesisatı ve Mobilya Montaj Hizmetleri</h2>
+    <p>
+      Ev ve iş yerinizde ihtiyaç duyduğunuz montaj, tesisat ve küçük tamirat işleri için
+      hızlı, temiz ve güvenilir hizmet sunuyoruz.
+    </p>
+
+    <div class="buttons">
+      <a class="btn btn-whatsapp" href="https://wa.me/905409102633" target="_blank">📲 WhatsApp'tan Yaz</a>
+      <a class="btn btn-call" href="tel:+905409102633">📞 Hemen Ara</a>
+    </div>
+
+    <img src="banner-montajpoint.jpg" alt="MontajPoint Hizmet Görseli" class="hero-image">
+  </section>
+
+  <section class="container">
+    <h2 class="section-title">Hizmetlerimiz</h2>
+    <p class="section-text">Mersin ve çevresinde birçok farklı montaj ve tesisat işinde hizmet veriyoruz.</p>
+
+    <div class="cards">
+      <div class="card">
+        <h3>🔌 Elektrik İşleri</h3>
+        <ul>
+          <li>Basit avize montajı</li>
+          <li>Priz değişimi</li>
+          <li>Anahtar değişimi</li>
+          <li>Küçük elektrik tamiratları</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>🚰 Su Tesisatı</h3>
+        <ul>
+          <li>Mutfak batarya değişimi</li>
+          <li>Banyo batarya değişimi</li>
+          <li>Normal musluk değişimi</li>
+          <li>Şofben bağlantısı</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>🪑 Mobilya Montaj</h3>
+        <ul>
+          <li>2 kapılı gardrop kurulumu</li>
+          <li>3 kapaklı gardrop kurulumu</li>
+          <li>4 kapaklı gardrop kurulumu</li>
+          <li>6 kapaklı gardrop kurulumu</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2 class="section-title">Örnek Hizmet Fiyatları</h2>
+    <p class="section-text">Aşağıdaki fiyatlar örnek başlangıç fiyatlarıdır. Tüm fiyatlar malzeme hariçtir.</p>
+
+    <div class="price-box">
+      <table>
+        <thead>
+          <tr>
+            <th>Hizmet</th>
+            <th>Fiyat</th>
+            <th>Not</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mutfak batarya değişimi</td>
+            <td>750 TL</td>
+            <td>Malzeme hariç</td>
+          </tr>
+          <tr>
+            <td>Banyo batarya değişimi</td>
+            <td>750 TL</td>
+            <td>Malzeme hariç</td>
+          </tr>
+          <tr>
+            <td>Normal musluk değişimi</td>
+            <td>500 TL</td>
+            <td>Malzeme hariç</td>
+          </tr>
+          <tr>
+            <td>2 kapılı gardrop kurulumu</td>
+            <td>750 TL</td>
+            <td>Malzeme hariç</td>
+          </tr>
+          <tr>
+            <td>3 kapaklı gardrop kurulumu</td>
+            <td>1000 TL</td>
+            <td>Malzeme hariç</td>
+          </tr>
+          <tr>
+            <td>4 kapaklı gardrop kurulumu</td>
+            <td>1250 TL</td>
+            <td>Malzeme hariç</td>
+          </tr>
+          <tr>
+            <td>6 kapaklı gardrop kurulumu</td>
+            <td>1750 TL</td>
+            <td>Malzeme hariç</td>
+          </tr>
+          <tr>
+            <td>Şofben bağlantısı</td>
+            <td>750 TL</td>
+            <td>Malzeme hariç</td>
+          </tr>
+          <tr>
+            <td>Basit avize montajı</td>
+            <td>500 TL</td>
+            <td>Malzeme hariç</td>
+          </tr>
+          <tr>
+            <td>Priz değişimi</td>
+            <td>500 TL</td>
+            <td>Malzeme hariç</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note">
+      Fiyatlar işin yerine, ürün durumuna ve montaj zorluğuna göre değişebilir.
+      Net fiyat için WhatsApp’tan fotoğraf göndererek bilgi alabilirsiniz.
+    </div>
+  </section>
+
+  <section class="container">
+    <h2 class="section-title">Müşteri Yorumları</h2>
+    <p class="section-text">Müşterilerimizin memnuniyeti bizim için önemlidir.</p>
+
+    <div class="testimonials">
+      <div class="testimonial">
+        <p>“Banyo bataryasını hızlı şekilde değiştirdi. Temiz çalıştı, memnun kaldık.”</p>
+        <strong>– Mehmet K., Mersin</strong>
+      </div>
+
+      <div class="testimonial">
+        <p>“Gardrop kurulumunu tek başına düzgün ve hızlı yaptı. Gönül rahatlığıyla tavsiye ederim.”</p>
+        <strong>– Ayşe T., Mezitli</strong>
+      </div>
+
+      <div class="testimonial">
+        <p>“Avize ve priz değişiminde hem hızlı geldi hem de sorunsuz yaptı.”</p>
+        <strong>– Elena S., Yenişehir</strong>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2 class="section-title">Hizmet Bölgesi</h2>
+    <p class="section-text">Mersin merkez ve çevre bölgelerde hizmet veriyoruz.</p>
+
+    <div class="map-box">
+      <iframe
+        src="https://www.google.com/maps?q=Mersin%20Turkey&output=embed"
+        loading="lazy"
+        allowfullscreen>
+      </iframe>
+      <div class="map-text">
+        Mersin ve çevresindeki montaj, elektrik ve su tesisatı işleriniz için bizimle iletişime geçebilirsiniz.
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>İletişim</h2>
+    <p>Hızlı bilgi almak ve fiyat sormak için hemen arayın veya WhatsApp’tan yazın.</p>
+
+    <div class="buttons">
+      <a class="btn btn-whatsapp" href="https://wa.me/905409102633" target="_blank">📲 WhatsApp</a>
+      <a class="btn btn-call" href="tel:+905409102633">📞 0540 910 26 33</a>
+    </div>
+
+    <div class="socials">
+      <a href="https://instagram.com/montajpoint" target="_blank">📸 Instagram</a>
+      <a href="https://t.me/montajpoint" target="_blank">✈️ Telegram</a>
+      <a href="https://facebook.com/montajpoint" target="_blank">📘 Facebook</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 MontajPoint - Mersin Elektrik, Su Tesisatı ve Mobilya Montaj Hizmetleri
+  </footer>
+
+</body>
+</html>
